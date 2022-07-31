@@ -21,21 +21,21 @@ export const IncomeExpense = ({ deals }) => {
         div className = "balance_container" >
         <
         h3 > Balance < /h3> <
-        p > ₹{ totalBalance } < /p> <
-        /div> <
+        p > ₹{ totalBalance } < /p>  <
+        /div>  <
         div className = "inc_exp_container" >
         <
         div className = "money" >
         <
-        h3 > Income < /h3> <
-        p className = "money_plus" > ₹{ income } < /p> <
-        /div> <
+        h3 > Income < /h3>  <
+        p className = "money_plus" > ₹{ income } < /p>  <
+        /div>  <
         div className = "money" >
         <
-        h3 > Expense < /h3> <
-        p className = "money_minus" > ₹{ expense } < /p> <
-        /div> <
-        /div> <
+        h3 > Expense < /h3>  <
+        p className = "money_minus" > ₹{ expense } < /p>  <
+        /div>  <
+        /div>  <
         /section>
     );
 };

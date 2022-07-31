@@ -70,78 +70,69 @@ const App = () => {
         div className = "title" >
         <
         h2 > Expense Tracker < /h2> <
-        /div>
-
-        <
-        div >
-        <
-        IncomeExpense deals = { state.deals }
-        /> <
-        /div>
-
+        /div> <
+        div > < IncomeExpense deals = { state.deals }
+        /></div >
         <
         span className = "history" >
         <
-        h3 > History < /h3> <
-        /span> <
+        h3 > History < /h3> </span >
+        <
         div >
         <
         ul className = "list" > {
             state.deals.map((deal) => {
-                return ( <
-                    li key = { deal.id } >
+                return ( < li key = { deal.id } >
                     <
-                    span > { deal.grocery } < /span> <
-                    span > ₹. { deal.amount } < /span> <
+                    span > { deal.grocery } < /span>   <
+                    span > ₹. { deal.amount } < /span>   <
                     button className = "delete_btn"
                     onClick = {
-                        () =>
-                        dispatch({ type: 'DELETE_PERSON', payload: deal.id })
+                        () => dispatch({ type: 'DELETE_PERSON', payload: deal.id })
                     } >
                     Delete <
-                    /button> <
+                    /button>   <
                     /li>
                 );
             })
-        } <
-        /ul> <
+        }; <
+        /ul>   <
         /div>
 
         <
         form className = "form"
         onSubmit = { submitHandler } >
         <
-        h3 > Add New Transaction < /h3> <
+        h3 > Add Transaction < /h3>  <
         div className = "form_control" >
         <
-        label htmlFor = "name" > Transaction < /label> <
+        label htmlFor = "name" > Transaction < /label>  <
         input type = "text"
         name = "grocery_name"
         id = "name"
         placeholder = "Enter Transaction"
         value = { grocery }
         onChange = {
-            (e) => setGrocery(e.target.value) }
-        /> <
-        /div> <
+            (e) => setGrocery(e.target.value)
+        }
+        />  </div > <
         div className = "form_control" >
         <
         label htmlFor = "amount" >
-        Amount(negative - expense, positive - income) <
-        /label> <
+        Amount(negative - expense, positive - income) < /label>  <
         input type = "number"
         name = "grocery_amount"
         id = "amount"
         placeholder = "Enter Amount"
         value = { amount }
         onChange = {
-            (e) => setAmount(e.target.value) }
-        /> <
-        /div> <
+            (e) => setAmount(e.target.value)
+        }
+        /> </div >
+        <
         button type = "submit"
         className = "btn" >
-        Add Transaction <
-        /button> <
+        Add Transaction < /button> <
         /form> <
         /section>
     );
