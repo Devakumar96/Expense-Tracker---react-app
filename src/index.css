@@ -16,11 +16,11 @@ ul li {
 }
 
 :root {
-    --Bg-color: hsl(167, 29%, 85%);
+    --Bg-color: hsl(166, 94%, 50%);
     --font-main: hsl(207, 95%, 8%);
-    --income-clr: hsl(92, 45%, 32%);
-    --expense-clr: hsl(353, 81%, 51%);
-    --font: #6c757d;
+    --income-clr: hsl(92, 91%, 48%);
+    --expense-clr: hsl(353, 89%, 49%);
+    --font: #9fa7af;
 }
 
 body {
